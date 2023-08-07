@@ -1,0 +1,80 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "WelcomeIntent",
+          "samples": [
+            "DIEA"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "latitude",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "longitude",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "TemperatureIntent",
+          "samples": [
+            "temperatura en {latitude} y menos {longitude}",
+            "{latitude} y menos {longitude}",
+            "menos {latitude} y {longitude}",
+            "menos {latitude} y menos {longitude}",
+            "temperatura en {latitude} y {longitude}",
+            "{latitude} y {longitude}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "country",
+              "type": "AMAZON.Country"
+            }
+          ],
+          "name": "CiudadIntent",
+          "samples": [
+            "estado {city} {country}",
+            "estado de {city} {country}",
+            "de {city} {country}",
+            "de {city}",
+            "estado de {city}",
+            "en el estado de {city}",
+            "estado {city}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "clima api"
+    }
+  }
+}
